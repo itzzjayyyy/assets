@@ -1,1 +1,26 @@
-vid.mp4
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Player</title>
+    <style>
+        /* Basic CSS to make the video fill the screen */
+        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background-color: black; }
+        video { 
+            position: fixed; 
+            right: 0; 
+            bottom: 0; 
+            min-width: 100%; 
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100; /* Ensure video stays in the background if you add other content */
+        }
+    </style>
+</head>
+<body>
+    <video autoplay loop controls>
+        <source src="vid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</body>
+</html>
