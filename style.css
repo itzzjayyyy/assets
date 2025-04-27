@@ -11,9 +11,9 @@ body {
     margin: 0;
     color: #e0e0e0;
     overflow-x: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex; /* Enable flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
     min-height: 100vh;
     text-align: center;
 }
@@ -45,6 +45,7 @@ body {
 }
 
 .redirect-message {
+    display: none; /* Hide the redirect message as we are now embedding the video */
     font-size: 1.5em;
     color: #64ffda;
     text-shadow: 0 0 10px #00bcd4;
@@ -62,4 +63,13 @@ body {
 
 .redirect-message a:hover {
     text-decoration: underline;
+}
+
+/* Video Styling */
+video {
+    /* Optional: Add any specific styling for the video player here */
+    max-width: 90%; /* Ensure video doesn't get too wide on smaller screens */
+    max-height: 90vh; /* Ensure video doesn't get too tall */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Optional shadow */
+    border-radius: 8px; /* Optional rounded corners */
 }
