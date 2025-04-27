@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Video</title>
+    <title>Redirecting...</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <video controls autoplay loop width="640" height="360">
-        <source src="https://home.jzrr.uk/vid.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <div class="gradient-container"></div>
+    <p class="redirect-message">
+        You will be automatically redirected to <a href="https://home.jzrr.uk/vid.mp4">https://home.jzrr.uk/vid.mp4</a>.
+        If you are not redirected, please click the link.
+    </p>
+    <script>
+        window.location.replace("https://home.jzrr.uk/vid.mp4");
+    </script>
 </body>
 </html>
